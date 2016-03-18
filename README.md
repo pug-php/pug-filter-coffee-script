@@ -1,4 +1,4 @@
-# jade-filter-stylus
+# jade-filter-coffee-script
 
 This template:
 ```jade
