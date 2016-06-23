@@ -1,7 +1,7 @@
-# jade-filter-coffee-script
+# pug-filter-coffee-script
 
 This template:
-```jade
+```pug
 body
   :coffee-script
     # Assignment:
