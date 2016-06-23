@@ -1,5 +1,8 @@
 {
-    "name": "kylekatarnls/jade-filter-coffee-script",
+    "name": "pug-php/pug-filter-coffee-script",
+    "replace": {
+        "kylekatarnls/jade-filter-coffee-script": "self.version"
+    },
     "description": "Render CoffeeScript code as JavaScript in a script tag",
     "type": "library",
     "license": "MIT",
@@ -11,7 +14,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "kylekatarnls/jade-php": "^1.8",
+        "pug-php/pug": "^1.11",
         "coffeescript/coffeescript": "dev-master"
     },
     "require-dev": {
@@ -19,7 +22,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Jade": "src/"
+            "Pug": "src/"
         }
     }
 }

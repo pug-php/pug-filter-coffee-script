@@ -1,9 +1,10 @@
 <?php
 
-namespace Jade\Filter;
+namespace Pug\Filter;
 
 use Jade\Compiler;
 use Jade\Nodes\Filter;
+use Jade\Filter\AbstractFilter;
 use CoffeeScript\Compiler as CoffeeScript;
 
 class CoffeeScript extends AbstractFilter
