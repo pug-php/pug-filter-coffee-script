@@ -12,10 +12,10 @@
             "email": "kylekatarnls@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "pug-php/pug": "^1.11",
-        "coffeescript/coffeescript": "dev-master"
+        "kylekatarnls/coffeescript": "^1.3"
     },
     "require-dev": {
         "phpunit/phpunit": ">=4.0"
