@@ -29,13 +29,13 @@ class ExamplesTest extends \PHPUnit_Framework_TestCase {
         ));
         $htmlFileContents = file_get_contents($htmlFile);
 
-        $actual = trim(preg_replace('`\s+`', '', $renderedHtml));
-        $expected = trim(preg_replace('`\s+`', '', $htmlFileContents));
+        $actual = trim(preg_replace('`[\s_]+`', '', $renderedHtml));
+        $expected = trim(preg_replace('`[\s_]+`', '', $htmlFileContents));
 
         $this->assertSame($expected, $actual, $jadeFile . ' should match ' . $htmlFile . ' as html');
 
-        $actual = trim(preg_replace('`\s+`', ' ', strip_tags($renderedHtml)));
-        $expected = trim(preg_replace('`\s+`', ' ', strip_tags($htmlFileContents)));
+        $actual = trim(preg_replace('`[\s_]+`', ' ', strip_tags($renderedHtml)));
+        $expected = trim(preg_replace('`[\s_]+`', ' ', strip_tags($htmlFileContents)));
 
         $this->assertSame($expected, $actual, $jadeFile . ' should match ' . $htmlFile . ' as text');
     }
