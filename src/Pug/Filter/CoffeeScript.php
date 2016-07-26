@@ -2,27 +2,14 @@
 
 namespace Pug\Filter;
 
-use Jade\Compiler;
-use Jade\Nodes\Filter;
-use Jade\Filter\AbstractFilter;
-use CoffeeScript\Compiler as CoffeeScript;
+use NodejsPhpFallback\CoffeeScript as CoffeeScriptPhpEngine;
 
-class CoffeeScript extends AbstractFilter
+class CoffeeScript extends Script
 {
-    public function __invoke(Filter $node, Compiler $compiler)
-    {
-        $nodes = $node->block->nodes;
-        $indent = strlen($nodes[0]->value) - strlen(ltrim($nodes[0]->value));
-        $coffee = '';
-        foreach ($nodes as $line) {
-            $coffee .= substr($line->value, $indent) . "\n";
-        }
-        $js = CoffeeScript::compile($coffee, array(
-            'filename' => 'source.coffee',
-            'bare' => true,
-            'header' => false,
-        ));
+    protected $textType = 'javascript';
 
-        return '<script type="text/javascript">' . $js . '</script>';
+    public function parse($code)
+    {
+        return new CoffeeScriptPhpEngine($code);
     }
 }
