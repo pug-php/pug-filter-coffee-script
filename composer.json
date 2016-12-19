@@ -18,7 +18,8 @@
         "nodejs-php-fallback/coffeescript": "^1.0"
     },
     "require-dev": {
-        "phpunit/phpunit": ">=4.0"
+        "phpunit/phpunit": ">=4.0",
+        "codeclimate/php-test-reporter": "dev-master"
     },
     "autoload": {
         "psr-0": {
