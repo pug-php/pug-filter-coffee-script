@@ -1,5 +1,11 @@
 # pug-filter-coffee-script
 
+[![Latest Stable Version](https://poser.pugx.org/pug-php/pug-filter-coffee-script/v/stable.png)](https://packagist.org/packages/pug-php/pug-filter-coffee-script)
+[![Build Status](https://travis-ci.org/pug-php/pug-filter-coffee-script.svg?branch=master)](https://travis-ci.org/pug-php/pug-filter-coffee-script)
+[![Code Climate](https://codeclimate.com/github/pug-php/pug-filter-coffee-script/badges/gpa.svg)](https://codeclimate.com/github/pug-php/pug-filter-coffee-script)
+[![Test Coverage](https://codeclimate.com/github/pug-php/pug-filter-coffee-script/badges/coverage.svg)](https://codeclimate.com/github/pug-php/pug-filter-coffee-script/coverage)
+[![StyleCI](https://styleci.io/repos/61806854/shield?branch=master)](https://styleci.io/repos/61806854)
+
 This template:
 ```pug
 body
