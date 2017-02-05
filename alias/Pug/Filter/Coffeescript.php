@@ -1,8 +1,8 @@
 <?php
 
-// Alias for case-sensitive systems
-
 namespace Pug\Filter;
+
+// Alias for case-sensitive systems
 
 class Coffeescript extends CoffeeScript
 {
