@@ -2,10 +2,14 @@
 
 namespace Pug\Filter;
 
-require_once __DIR__ . '/../../../src/Pug/Filter/CoffeeScript.php';
+use NodejsPhpFallback\CoffeeScript as CoffeeScriptPhpEngine;
 
-// Alias for case-sensitive systems
-
-class Coffeescript extends CoffeeScript
+class Coffeescript extends Script
 {
+    protected $textType = 'javascript';
+
+    public function parse($code)
+    {
+        return new CoffeeScriptPhpEngine($code);
+    }
 }
