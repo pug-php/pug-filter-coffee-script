@@ -23,7 +23,8 @@
     },
     "autoload": {
         "psr-0": {
-            "Pug": "src/"
+            "Pug": "src/",
+            "Pug\\Filter": "src/PugFilterAlias"
         }
     }
 }

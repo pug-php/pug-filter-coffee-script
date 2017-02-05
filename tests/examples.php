@@ -11,11 +11,7 @@ class ExamplesTest extends \PHPUnit_Framework_TestCase
         $examples = __DIR__ . '/../examples';
         foreach (scandir($examples) as $file) {
             if (substr($file, -4) === '.pug') {
-                $name = substr($file, 0, -4);
-                if ($name === 'alias' && defined('HHVM_VERSION')) {
-                    continue;
-                }
-                $cases[] = array($examples . '/' . $name . '.html', $examples . '/' . $file);
+                $cases[] = array($examples . '/' . substr($file, 0, -4) . '.html', $examples . '/' . $file);
             }
         }
 
