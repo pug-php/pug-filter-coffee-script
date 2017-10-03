@@ -47,4 +47,4 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 addons:
   code_climate:
-    repo_token: 42424e464a16a1cd50ed98cf9dc112e78f53a443566a26f2b3f7a86d3386d4cd
+    repo_token: 2c5c4708df9d12fcba852dd790c57e53b7f87280f528cbbc0dc6413d13841d76
