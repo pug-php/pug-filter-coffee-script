@@ -14,7 +14,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "pug-php/pug": "3.0.0-alpha3@alpha",
+        "pug-php/pug": "^2.0.1 || ^3.0.0",
         "nodejs-php-fallback/coffeescript": "^1.0"
     },
     "require-dev": {
